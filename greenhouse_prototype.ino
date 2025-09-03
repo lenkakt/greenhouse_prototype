@@ -1,7 +1,7 @@
 // Greenhouse demo application for Seeeduino XIAO used for demonstrations 
 // Author: Lenka Koskova Triskova, lenka@koskova.cz
 // License: MIT
-
+#include "ArduinoLowPower.h"
 #include "./gh_definitions.h"
 
 
@@ -78,7 +78,7 @@ void gh_do_normal_operation() {
 void gh_do_sleep() {
   // No real sleep yet, just delay and back to normal
   print_debug("State: Sleeping\n");
-  delay(GH_DELAY_LONG);
+  LowPower.sleep(GH_DELAY_SLEEP);
   gh_state = GH_STATE_ON;
 
 }

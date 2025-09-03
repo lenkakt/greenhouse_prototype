@@ -18,6 +18,7 @@
 
 #define GH_DELAY_SHORT 1000
 #define GH_DELAY_LONG 3000
+#define GH_DELAY_SLEEP 3000             //Device sleep interval
 
 #define GH_MAX_LOOP 5
 
